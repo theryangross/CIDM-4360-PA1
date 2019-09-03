@@ -1,0 +1,11 @@
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.deps.json
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.runtimeconfig.json
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.runtimeconfig.dev.json
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.dll
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.pdb
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.csprojAssemblyReference.cache
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.csproj.CoreCompileInputs.cache
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.AssemblyInfoInputs.cache
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.AssemblyInfo.cs
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.dll
+/Users/ryangross/Desktop/College/Senior Fall/Object Oriented Analysis & Design/Assignments/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.pdb
