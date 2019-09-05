@@ -22,7 +22,7 @@ namespace Assignment_1
                 switch (ch)
                 {
                 case 'a':
-                    ReadExpession(out number1, out number2, ref ExpressionsCounter);
+                    userAnswer = ReadExpession(out number1, out number2, ref ExpressionsCounter);
                     break;
                 case 'b':
                     CheckAnswer(number1 , number2, userAnswer, ExpressionsCounter, ref score);
