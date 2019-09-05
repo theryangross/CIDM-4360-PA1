@@ -22,7 +22,7 @@ namespace Assignment_1
                 switch (ch)
                 {
                 case 'a':
-                    ReadExpession(out number1, out number2, ExpressionsCounter);
+                    ReadExpession(out number1, out number2, ref ExpressionsCounter);
                     //put a flag
                     break;
                 case 'b':
@@ -45,7 +45,7 @@ namespace Assignment_1
             Console.WriteLine("d. Exit");
         }
 
-        public static int ReadExpession(out int number1, out int number2, int ExpressionsCounter)
+        public static int ReadExpession(out int number1, out int number2, ref int ExpressionsCounter)
         {
 
             Console.WriteLine("Enter an expression with two numbers separated by a * and the answer separted by an = : ");
