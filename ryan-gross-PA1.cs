@@ -23,11 +23,9 @@ namespace Assignment_1
                 {
                 case 'a':
                     ReadExpession(out number1, out number2, ref ExpressionsCounter);
-                    //put a flag
                     break;
                 case 'b':
                     CheckAnswer(number1 , number2, userAnswer, ExpressionsCounter, ref score);
-                    //put a flag
                     break;
                 case 'c':
                     DisplayScore(score, ExpressionsCounter);
@@ -60,13 +58,13 @@ namespace Assignment_1
         }
 
 
-        public static void CheckAnswer(int number1, int number2, int userAnswer, int ExpressionsCounter, ref int score)
+        public static int CheckAnswer(int number1, int number2, int userAnswer, int ExpressionsCounter, ref int score)
         {
             int correctAnswer = number1 * number2;
 
             if(ExpressionsCounter == 0)
             {
-                Console.WriteLine("Enter an expression by selecting option a in the menu.");
+                Console.WriteLine("Enter an expression by selecting option 'a' in the menu.");
             }
             else if(userAnswer == correctAnswer)
             {
@@ -77,6 +75,8 @@ namespace Assignment_1
             {
                 Console.WriteLine("Incorrect. The right answer is {0}*{1}={2}.", number1, number2, correctAnswer);
             }
+
+            return score;
         }
 
         static void DisplayScore(int score, int ExpressionsCounter)
