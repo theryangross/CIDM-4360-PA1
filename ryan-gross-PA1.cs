@@ -26,7 +26,7 @@ namespace Assignment_1
                     //put a flag
                     break;
                 case 'b':
-                    CheckAnswer(number1 , number2, userAnswer, ExpressionsCounter, score);
+                    CheckAnswer(number1 , number2, userAnswer, ExpressionsCounter, ref score);
                     //put a flag
                     break;
                 case 'c':
@@ -60,7 +60,7 @@ namespace Assignment_1
         }
 
 
-        public static void CheckAnswer(int number1, int number2, int userAnswer, int ExpressionsCounter, int score)
+        public static void CheckAnswer(int number1, int number2, int userAnswer, int ExpressionsCounter, ref int score)
         {
             int correctAnswer = number1 * number2;
 
