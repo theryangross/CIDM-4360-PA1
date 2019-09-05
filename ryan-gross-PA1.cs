@@ -8,6 +8,11 @@ namespace Assignment_1
         static void Main(string[] args)
         {
             char ch;
+            int number1 = 0;
+            int number2 = 0;
+            int userAnswer = 0;
+            int ExpressionsCounter = 0;
+            int score = 0;
 
             do
             {
@@ -17,15 +22,15 @@ namespace Assignment_1
                 switch (ch)
                 {
                 case 'a':
-                    ReadExpession();
+                    ReadExpession(out number1, out number2, ExpressionsCounter);
                     //put a flag
                     break;
                 case 'b':
-                    CheckAnswer();
+                    CheckAnswer(number1 , number2, userAnswer, ExpressionsCounter, score);
                     //put a flag
                     break;
                 case 'c':
-                    DisplayScore();
+                    DisplayScore(score, ExpressionsCounter);
                     break;
                 }
             } while (ch != 'd');
@@ -40,23 +45,22 @@ namespace Assignment_1
             Console.WriteLine("d. Exit");
         }
 
-        public static int ReadExpession(out int number1, out int number2)
+        public static int ReadExpession(out int number1, out int number2, int ExpressionsCounter)
         {
-            int ExpressionsCounter = 0;
 
             Console.WriteLine("Enter an expression with two numbers separated by a * and the answer separted by an = : ");
             string Expression = Console.ReadLine();
             string[] ExpressionComponents = Expression.Split('*', '=');
-            int number1 = Convert.ToInt32(ExpressionComponents[0]);
-            int number2 = Convert.ToInt32(ExpressionComponents[1]);
+            number1 = Convert.ToInt32(ExpressionComponents[0]);
+            number2 = Convert.ToInt32(ExpressionComponents[1]);
             int userAnswer = Convert.ToInt32(ExpressionComponents[2]);
             ExpressionsCounter ++;
 
-            
+            return userAnswer;
         }
 
 
-        public static void CheckAnswer()
+        public static void CheckAnswer(int number1, int number2, int userAnswer, int ExpressionsCounter, int score)
         {
             int correctAnswer = number1 * number2;
 
@@ -75,9 +79,8 @@ namespace Assignment_1
             }
         }
 
-        static void DisplayScore()
+        static void DisplayScore(int score, int ExpressionsCounter)
         {
-            int score = 0;
 
             Console.WriteLine("Your score is {0}/{1} expressions.", score, ExpressionsCounter);
         }
